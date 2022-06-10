@@ -1,0 +1,24 @@
+<div *ngIf="data" class="products">
+  <div class="card my-card" *ngFor="let d of data; let i">
+    <img
+      [src]="d.image"
+      class="card-img-top"
+      alt="Product Image"
+      height="50%"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ d.title.substring(0, 30) }}</h5>
+      <h6>{{ d.price }}$</h6>
+      <div class="products">
+        <img
+          src="https://pngimg.com/uploads/amazon/amazon_PNG23.png"
+          alt="prime"
+          width="20"
+          height="20"
+        />
+        <p>Get it by Wednesday</p>
+      </div>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.mine-nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav-item {
+  margin: 0px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}

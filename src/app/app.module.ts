@@ -11,6 +11,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ImageService } from './image.service';
 import { ProductsService } from './products.service';
+import { LoginComponent } from './components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { ProductsService } from './products.service';
     UsersComponent,
     ContactComponent,
     ErrorComponent,
+    LoginComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [ImageService, ProductsService],
   bootstrap: [AppComponent],
 })

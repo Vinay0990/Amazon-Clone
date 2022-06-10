@@ -1,0 +1,36 @@
+<div class="container login-form">
+  <h1>Login Here</h1>
+
+  <span *ngIf="!loginStatus && submitStatus"
+    >Please check Username & password</span
+  >
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3 row">
+      <label for="email" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          formControlName="email"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="password" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          formControlName="password"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="col-sm-10">
+        <input type="submit" />
+      </div>
+    </div>
+  </form>
+</div>

@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Home Page
 
-![alt text](images\Home.png)
+![alt text](images/Home.png)
 
 # Product Page
 
-![alt text](images\Product.png)
+![alt text](images/Product.png)
